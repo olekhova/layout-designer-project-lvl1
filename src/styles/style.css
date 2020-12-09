@@ -2,7 +2,7 @@
 :root {
   --white: #fff;
   --trance-white: #d7ccc0;
-  --light: ##f5f4f0;
+  --light: #f5f4f0;
   --primary: #fe8a02;
   --primary-dark: #42413c;
   --dark: #2a2626;
@@ -18,6 +18,8 @@
 }
 
 body {
+  margin: 0;
+
   color: var(--dark);
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
@@ -39,11 +41,12 @@ h3 {
 .container {
   max-width: 1110px;
   margin: auto;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .heading {
+  font-weight: normal;
   font-family: 'Neucha', cursive;
   line-height: 1.2em;
 }
@@ -52,7 +55,65 @@ h3 {
   color: var(--primary);
 }
 
+.background {
+  position: relative;
+}
+
+.background::before {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 90%;
+
+  content: url('../images/background.png');
+}
+
+.background-light {
+  background-color: var(--light);
+}
+
+.header-image {
+  position: absolute;
+
+  top: 55px;
+  right: -270px;
+
+  height: 525px;
+}
+
+.header-text-container {
+  display: flex;
+  margin-top: 225px;
+}
+
+.header-text {
+  margin-right: 30px;
+}
+
+.header-button {
+  width: 149px;
+  margin: auto;
+  margin-top: 38px;
+}
+
+.button {
+  height: 48px;
+  margin: auto;
+  padding: 12px 24px;
+
+  color: var(--white);
+
+  font-weight: bold;
+
+  background-color: var(--primary);
+}
+
 .input {
   color: var(--white);
+
   background-color: var(--primary-dark);
 }
