@@ -10,10 +10,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/style.css">
 </head>
-
 <body>
-  <header class="background background-light">
-    <div class="container header-container">
+  <header class="background background-light overflow-x">
+    <div class="container header-container  relative">
       <h1 class="heading">
         <span class="primary">Когнитивные <br> искажения</span> <br>
         в программировании
@@ -45,10 +44,10 @@
       </div>
       <!-- /.header-text-container -->
       <div class="header-button">
-        <button class="button">
-          ПОДРОБНЕЕ
-        </button>
-      </div>
+        <a href="#five">
+          <div class="button">ПОДРОБНЕЕ</div>
+        </a>
+      </div>  
       <!-- /.header-button -->
     </div>
     <!-- /.container -->
@@ -71,6 +70,69 @@
     </div>
     <!-- /.container -->
   </main>
+  <section class="background-dark section-cards">
+    <div id="five" class="container">
+      <nav class="cards">
+        <div class="card-container card-content">
+          <span class="primary">5 когнитивных искажений</span><br>о существовании которых стоит помнить
+        </div>
+        <!-- /.card-content -->
+        <div class="card-container card background-white">
+          <div class="card-number">1</div>
+          <!-- /.card-number -->
+          <h3 class="card-title primary heading">Эффект ИКЕА</h3>
+          <!-- /.card-title -->
+          <div class="card-text">Вы переоцениваете 
+            собственные решения, и, как следствие, недооцениваете решения других.</div>
+          <!-- /.card-text -->
+        </div>
+        <!-- /.card -->
+        <div class="card-container card background-white">
+          <div class="card-number">2</div>
+          <!-- /.card-number -->
+          <h3 class="card-title primary heading">Преждевременная оптимизация</h3>
+          <!-- /.card-title -->
+          <div class="card-text">Вы оптимизируете что-то задолго до того,
+            как в этом появляется необходимость.</div>
+          <!-- /.card-text -->
+        </div>
+        <!-- /.card -->
+        <div class="card-container card background-white">
+          <div class="card-number">3</div>
+          <!-- /.card-number -->
+          <h3 class="card-title primary heading">Искажение новизны</h3>
+          <!-- /.card-title -->
+          <div class="card-text">Вы даёте более высокую оценку тем событиям, 
+            которые произошли недавно, и недооцениваете более старые. </div>
+          <!-- /.card-text -->
+        </div>
+        <!-- /.card -->
+        <div class="card-container card background-white">
+          <div class="card-number">4</div>
+          <!-- /.card-number -->
+          <h3 class="card-title primary heading">Гиперболическое обесценивание</h3>
+          <!-- /.card-title -->
+          <div class="card-text">Вы гонитесь за немедленной маленькой выгодой 
+            и игнорируете более крупную, недоступную сейчас, но доступную в будущем.</div>
+          <!-- /.card-text -->
+        </div>
+        <!-- /.card -->
+        <div class="card-container card background-white">
+          <div class="card-number">5</div>
+          <!-- /.card-number -->
+          <h3 class="card-title primary heading">Ошибка планирования</h3>
+          <!-- /.card-title -->
+          <div class="card-text">Неправильно рассчитывать время
+             необходимое для завершения задачи.</div>
+          <!-- /.card-text -->
+        </div>
+        <!-- /.card -->
+      </nav>
+      <!-- /.nav -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.background-dark -->
   <footer class="container">
     <div class="input">
       Хотите узнать больше? Подпишитесь на обновления

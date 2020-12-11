@@ -38,11 +38,23 @@ h3 {
   font-size: 34px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   max-width: 1110px;
   margin: auto;
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+.overflow-x {
+  overflow-x: hidden;
+}
+
+.relative {
+  position: relative;
 }
 
 .heading {
@@ -65,13 +77,13 @@ h3 {
   top: 0;
   left: 0;
 
+  width: 100%;
+  height: 100%;
+
   background-image: url('../images/background.png');
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 90%;
-
-  width: 100%;
-  height: 100%;
 
   content: '';
 }
@@ -80,11 +92,21 @@ h3 {
   background-color: var(--light);
 }
 
+.background-dark {
+  background-color: var(--dark);
+}
+
+.background-white {
+  background-color: var(--white);
+}
+
 .header-image {
   position: absolute;
 
   top: 55px;
   right: -270px;
+
+  z-index: 10;
 
   height: 525px;
 }
@@ -98,22 +120,22 @@ h3 {
   margin-right: 30px;
 }
 
-.header-button {
-  width: 149px;
-  margin: auto;
-  margin-top: 38px;
-}
-
 .button {
+  width: 149px;
   height: 48px;
   margin: auto;
+  margin-top: 38px;
   padding: 12px 24px;
 
+  background-color: var(--primary);
+}
+
+.header-button a {
   color: var(--white);
 
   font-weight: bold;
 
-  background-color: var(--primary);
+  cursor: pointer;
 }
 
 .main-container {
@@ -136,6 +158,60 @@ h3 {
 
 .video {
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+.section-cards {
+  padding-top: 100px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card-container {
+  max-width: 350px;
+  margin-top: 20px;
+}
+
+.card-content {
+  color: var(--white);
+  font-weight: normal;
+  font-size: 52px;
+  font-family: 'Neucha', cursive;
+  line-height: 120%;
+}
+
+.card-number {
+  margin-bottom: 40px;
+
+  color: var(--primary-dark);
+  font-size: 64px;
+  font-family: 'Neucha', cursive;
+  line-height: 1em;
+}
+
+.card-title {
+  margin-bottom: 4px;
+}
+
+.card {
+  padding: 24px;
+}
+
+.card:hover {
+  color: var(--white);
+
+  background-color: var(--primary);
+}
+
+.card:hover .card-number {
+  color: var(--white);
+}
+
+.card:hover .card-title {
+  color: var(--white);
 }
 
 .input {
