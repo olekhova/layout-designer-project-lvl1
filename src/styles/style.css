@@ -38,7 +38,13 @@ h3 {
   font-size: 34px;
 }
 
+h4 {
+  font-size: 24px;
+}
+
 a {
+  color: var(--dark);
+
   text-decoration: none;
 }
 
@@ -65,6 +71,14 @@ a {
 
 .primary {
   color: var(--primary);
+}
+
+.trance-dark {
+  color: var(--trance-dark);
+}
+
+.white {
+  color: var(--white);
 }
 
 .background {
@@ -100,6 +114,10 @@ a {
   background-color: var(--white);
 }
 
+.background-brown {
+  background-color: var(--brown);
+}
+
 .header-image {
   position: absolute;
 
@@ -113,11 +131,13 @@ a {
 
 .header-text-container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-top: 225px;
 }
 
 .header-text {
-  margin-right: 30px;
+  max-width: 540px;
 }
 
 .button {
@@ -212,6 +232,54 @@ a {
 
 .card:hover .card-title {
   color: var(--white);
+}
+
+.card:hover .card-text {
+  color: var(--white);
+}
+
+.section-main {
+  display: flex;
+}
+
+.section-image {
+  margin-right: 31px;
+
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+.title-distortion {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.title-name {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.title-text {
+  margin-top: 0;
+}
+
+.section-manifest {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  padding-left: 8px;
+
+  font-weight: bold;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.section-text-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.section-text {
+  max-width: 540px;
 }
 
 .input {
