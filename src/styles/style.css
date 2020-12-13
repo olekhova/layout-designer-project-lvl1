@@ -81,6 +81,10 @@ a {
   color: var(--white);
 }
 
+.primary-dark {
+  color: var(--primary-dark);
+}
+
 .background {
   position: relative;
 }
@@ -97,7 +101,7 @@ a {
   background-image: url('../images/background.png');
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 90%;
+  opacity: 10%;
 
   content: '';
 }
@@ -268,8 +272,8 @@ a {
   padding-left: 8px;
 
   font-weight: bold;
-  font-style: normal;
   font-size: 14px;
+  font-style: normal;
 }
 
 .section-text-container {
