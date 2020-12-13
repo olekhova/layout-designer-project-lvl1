@@ -224,6 +224,11 @@ a {
   padding: 24px;
 }
 
+.card a {
+  display: block;
+  height: 100%;
+}
+
 .card:hover {
   color: var(--white);
 
