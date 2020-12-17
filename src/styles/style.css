@@ -92,6 +92,10 @@ a {
   padding-left: 52px;
 }
 
+.pt-100 {
+  padding-top: 100px;
+}
+
 .ta-center {
   text-align: center;
 }
@@ -170,6 +174,9 @@ a {
 }
 
 ul {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 
   counter-reset: counter-number;
@@ -178,17 +185,14 @@ ul {
 li:not(:first-child)::before {
   margin-bottom: 40px;
 
-  content: counter(counter-number);
-  counter-increment: counter-number;
-
   color: var(--primary-dark);
+
   font-size: 64px;
   font-family: 'Neucha', cursive;
   line-height: 1em;
-}
 
-li:not(:first-child)::before:hover {
-  color: var(--white);
+  content: counter(counter-number);
+  counter-increment: counter-number;
 }
 
 .header-image {
@@ -226,13 +230,9 @@ li:not(:first-child)::before:hover {
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 
-.section-cards {
-  padding-top: 100px;
-}
-
 .card-container {
   max-width: 350px;
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .card-content {
@@ -240,15 +240,6 @@ li:not(:first-child)::before:hover {
   font-size: 52px;
   font-family: 'Neucha', cursive;
   line-height: 120%;
-}
-
-.card-number {
-  margin-bottom: 40px;
-
-  color: var(--primary-dark);
-  font-size: 64px;
-  font-family: 'Neucha', cursive;
-  line-height: 1em;
 }
 
 .card-title {
@@ -270,7 +261,7 @@ li:not(:first-child)::before:hover {
   background-color: var(--primary);
 }
 
-.card:hover .card-number {
+.card:hover::before {
   color: var(--white);
 }
 
@@ -316,12 +307,6 @@ li:not(:first-child)::before:hover {
   font-style: normal;
 
   text-transform: uppercase;
-}
-
-.section-text-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .section-text {
