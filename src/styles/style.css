@@ -27,6 +27,10 @@ body {
 }
 
 h1 {
+  position: relative;
+
+  z-index: 20;
+
   font-size: 72px;
 }
 
@@ -38,7 +42,8 @@ h3 {
   font-size: 34px;
 }
 
-h4 {
+h4,
+.p-h4 {
   font-size: 24px;
 }
 
@@ -72,6 +77,22 @@ a {
   flex-basis: 50%;
 }
 
+.max-width-350 {
+  max-width: 350px;
+}
+
+.max-width-540 {
+  max-width: 540px;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mt-8 {
+  margin-top: 8px;
+}
+
 .mt-16 {
   margin-top: 16px;
 }
@@ -80,12 +101,48 @@ a {
   margin-top: 20px;
 }
 
-.mb-200 {
-  margin-bottom: -200px;
+.mt-43 {
+  margin-top: 43px;
+}
+
+.mt-55 {
+  margin-top: 55px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.mt-225 {
+  margin-top: 225px;
+}
+
+.mb-4 {
+  margin-bottom: 4px;
+}
+
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
 }
 
 .mb-30 {
   margin-bottom: 30px;
+}
+
+.mb-55 {
+  margin-bottom: 55px;
+}
+
+.mb-200 {
+  margin-bottom: -200px;
 }
 
 .pl-52 {
@@ -206,10 +263,6 @@ li:not(:first-child)::before {
   height: 525px;
 }
 
-.header-text-container {
-  margin-top: 225px;
-}
-
 .header-button {
   width: 149px;
   height: 48px;
@@ -230,20 +283,10 @@ li:not(:first-child)::before {
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 
-.card-container {
-  max-width: 350px;
-  margin-bottom: 20px;
-}
-
 .card-content {
-  font-weight: normal;
-  font-size: 52px;
-  font-family: 'Neucha', cursive;
-  line-height: 120%;
-}
+  margin: 0;
 
-.card-title {
-  margin-bottom: 4px;
+  font-size: 52px;
 }
 
 .card {
@@ -265,7 +308,7 @@ li:not(:first-child)::before {
   color: var(--white);
 }
 
-.card:hover .card-title {
+.card:hover h3 {
   color: var(--white);
 }
 
@@ -273,33 +316,11 @@ li:not(:first-child)::before {
   color: var(--white);
 }
 
-.section-main {
-  display: flex;
-}
-
 .section-image {
-  margin-right: 31px;
-
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 
-.title-distortion {
-  margin-top: 0;
-  margin-bottom: 8px;
-}
-
-.title-name {
-  margin-top: 0;
-  margin-bottom: 24px;
-}
-
-.title-text {
-  margin-top: 0;
-}
-
 .section-manifest {
-  margin-top: 100px;
-  margin-bottom: 20px;
   padding-left: 8px;
 
   font-weight: bold;
@@ -307,19 +328,6 @@ li:not(:first-child)::before {
   font-style: normal;
 
   text-transform: uppercase;
-}
-
-.section-text {
-  max-width: 540px;
-}
-
-.subscription-heading {
-  margin-top: 55px;
-  margin-bottom: 55px;
-}
-
-.subscription-form {
-  margin-top: 43px;
 }
 
 .email {
@@ -332,8 +340,6 @@ li:not(:first-child)::before {
 
 .input-group {
   justify-content: start;
-
-  margin-top: 8px;
 }
 
 .input {
@@ -380,8 +386,6 @@ li:not(:first-child)::before {
 }
 
 .agreement {
-  margin-top: 8px;
-
   font-size: 12px;
 }
 
@@ -390,8 +394,6 @@ li:not(:first-child)::before {
 }
 
 .copyright {
-  margin-top: 100px;
-
   font-size: 14px;
 }
 
