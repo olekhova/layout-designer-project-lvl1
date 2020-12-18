@@ -153,6 +153,14 @@ a {
   padding-top: 100px;
 }
 
+.pt-200 {
+  padding-top: 200px;
+}
+
+.pb-100 {
+  padding-bottom: 100px;
+}
+
 .ta-center {
   text-align: center;
 }
@@ -230,26 +238,13 @@ a {
   background-color: var(--primary-dark);
 }
 
-ul {
-  margin: 0;
+.cards {
+  margin: auto;
   padding: 0;
 
   list-style: none;
 
   counter-reset: counter-number;
-}
-
-li:not(:first-child)::before {
-  margin-bottom: 40px;
-
-  color: var(--primary-dark);
-
-  font-size: 64px;
-  font-family: 'Neucha', cursive;
-  line-height: 1em;
-
-  content: counter(counter-number);
-  counter-increment: counter-number;
 }
 
 .header-image {
@@ -291,6 +286,19 @@ li:not(:first-child)::before {
 
 .card {
   padding: 24px;
+}
+
+.card:not(:first-child)::before {
+  margin-bottom: 40px;
+
+  color: var(--primary-dark);
+
+  font-size: 64px;
+  font-family: 'Neucha', cursive;
+  line-height: 1em;
+
+  content: counter(counter-number);
+  counter-increment: counter-number;
 }
 
 .card a {
