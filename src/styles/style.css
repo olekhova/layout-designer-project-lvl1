@@ -287,14 +287,16 @@ a {
 .header-button {
   width: 149px;
   height: 48px;
-  margin-top: 38px;
+  margin-top: 40px;
   padding: 12px 24px;
 }
 
 .header-button a {
+  font-style: normal;
   font-weight: bold;
 
   text-transform: uppercase;
+
 
   cursor: pointer;
 }
