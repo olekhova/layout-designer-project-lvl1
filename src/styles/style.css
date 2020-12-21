@@ -80,6 +80,7 @@ a {
   justify-content: start;
 }
 
+
 .col-50 {
   flex-basis: 50%;
 }
@@ -268,8 +269,16 @@ a {
   color: var(--trance-dark);
 }
 
+.trance-white {
+  color: var(--trance-white);
+}
+
 .white {
   color: var(--white);
+}
+
+.brown {
+  color: var(--brown);
 }
 
 .primary-dark {
