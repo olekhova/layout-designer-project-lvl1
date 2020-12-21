@@ -94,6 +94,10 @@ a {
   margin-top: 0;
 }
 
+.mt-4 {
+  margin-top: 4px;
+}
+
 .mt-5 {
   margin-top: 5px;
 }
@@ -172,6 +176,10 @@ a {
 
 .pr-15 {
   padding-right: 15px;
+}
+
+.pl-30 {
+  padding-left: 30px;
 }
 
 .pl-52 {
