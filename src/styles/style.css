@@ -142,6 +142,10 @@ a {
   margin-bottom: 20px;
 }
 
+.mb-24 {
+  margin-bottom: 24px;
+}
+
 .mb-30 {
   margin-bottom: 30px;
 }
@@ -305,7 +309,7 @@ a {
 
 .video {
   border: 0;
-  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .card-content {
