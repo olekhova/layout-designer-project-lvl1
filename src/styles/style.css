@@ -166,6 +166,10 @@ a {
   margin-bottom: 6px;
 }
 
+.mb-12 {
+  margin-bottom: 12px;
+}
+
 .mb-20 {
   margin-bottom: 20px;
 }
@@ -224,6 +228,10 @@ a {
 
 .pt-200 {
   padding-top: 200px;
+}
+
+.pb-85 {
+  padding-bottom: 85px;
 }
 
 .pb-100 {
@@ -315,15 +323,6 @@ a {
   background-color: var(--primary-dark);
 }
 
-.cards {
-  margin: auto;
-  padding: 0;
-
-  list-style: none;
-
-  counter-reset: counter-number;
-}
-
 .header-image {
   position: absolute;
 
@@ -357,6 +356,14 @@ a {
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 
+.cards {
+  padding: 0;
+
+  list-style: none;
+
+  counter-reset: counter-number;
+}
+
 .card-content {
   margin: 0;
 
@@ -365,11 +372,10 @@ a {
 
 .card {
   padding: 24px;
+  padding-top: 30px;
 }
 
 .card:not(:first-child)::before {
-  margin-bottom: 40px;
-
   color: var(--primary-dark);
 
   font-size: 64px;
