@@ -416,9 +416,10 @@ a {
 .section-manifest {
   padding-left: 8px;
 
-  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   font-style: normal;
+  line-height: 1.6em;
 
   text-transform: uppercase;
 }
