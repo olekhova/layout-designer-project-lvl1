@@ -114,6 +114,10 @@ a {
   margin-top: 8px;
 }
 
+.mt-10 {
+  margin-top: 10px;
+}
+
 .mt-12 {
   margin-top: 12px;
 }
@@ -124,6 +128,10 @@ a {
 
 .mt-16 {
   margin-top: 16px;
+}
+
+.mt-40 {
+  margin-top: 40px;
 }
 
 .mt-43 {
@@ -232,6 +240,10 @@ a {
 
 .pl-52 {
   padding-left: 52px;
+}
+
+.pl-55 {
+  padding-left: 55px;
 }
 
 .pt-200 {
@@ -461,7 +473,7 @@ a {
 .send {
   position: relative;
 
-  width: 70px;
+  width: 65px;
   height: 50px;
 
   margin-top: 0;
